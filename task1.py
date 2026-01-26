@@ -7,7 +7,8 @@ df = pd.read_csv("SouthAfricaCrimeStats_v2.csv")
 print(df.head())
 
 # Rows and columns
-print("Shape:", df.shape)
+rows, cols = df.shape
+print(f"Rows: {rows}, Columns: {cols}")
 
 # Column names
 print("Columns:", df.columns.tolist())
